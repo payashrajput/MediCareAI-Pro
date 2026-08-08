@@ -1,0 +1,725 @@
+{% extends "base.html" %}
+
+{% block title %}MediCareAI — Your Intelligent Health Companion{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="premium-hero">
+
+    <div class="hero-content">
+
+        <div class="status-pill">
+            <span class="pulse-dot"></span>
+            AI-POWERED HEALTHCARE PLATFORM
+        </div>
+
+        <h1>
+            Better health.
+            <br>
+            <span>Smarter care.</span>
+        </h1>
+
+        <p class="hero-description">
+            Understand your symptoms, discover the right doctor,
+            manage appointments and stay on track throughout your
+            recovery — all from one intelligent healthcare platform.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="{{ url_for('register') }}" class="hero-primary">
+                Start Your Health Journey
+                <span>→</span>
+            </a>
+
+            <a href="#how-it-works" class="hero-secondary">
+                <span class="play-icon">▶</span>
+                See how it works
+            </a>
+
+        </div>
+
+        <div class="hero-trust">
+
+            <div>
+                <strong>10K+</strong>
+                <span>Care journeys</span>
+            </div>
+
+            <div>
+                <strong>500+</strong>
+                <span>Doctors</span>
+            </div>
+
+            <div>
+                <strong>4.9/5</strong>
+                <span>Patient rating</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AI VISUAL -->
+    <div class="hero-visual">
+
+        <div class="glow-circle"></div>
+
+        <div class="ai-card-main">
+
+            <div class="ai-card-top">
+
+                <div class="ai-brand">
+                    <div class="ai-icon">✦</div>
+
+                    <div>
+                        <strong>MediCare AI</strong>
+                        <span>Health assistant</span>
+                    </div>
+                </div>
+
+                <div class="online">
+                    <span></span>
+                    Online
+                </div>
+
+            </div>
+
+
+            <div class="ai-message">
+
+                <div class="bot-avatar">
+                    ✦
+                </div>
+
+                <div class="message-box">
+                    <small>AI CARE ASSISTANT</small>
+
+                    <p>
+                        Hi! Tell me how you're feeling
+                        and I'll help you find your
+                        next best step.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="symptom-preview">
+
+                <div class="input-label">
+                    SYMPTOM CHECK
+                </div>
+
+                <div class="fake-input">
+                    Mild fever and headache
+                    <span>🎙</span>
+                </div>
+
+                <div class="analysis">
+
+                    <div class="analysis-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <strong>
+                            Routine care recommended
+                        </strong>
+
+                        <span>
+                            General Physician
+                        </span>
+                    </div>
+
+                    <b>82%</b>
+
+                </div>
+
+            </div>
+
+
+            <div class="ai-footer">
+
+                <span>✦ AI-assisted</span>
+
+                <span>
+                    Safety-first screening
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- FLOATING DOCTOR -->
+        <div class="floating-doctor">
+
+            <div class="doctor-photo">
+                👨‍⚕️
+            </div>
+
+            <div>
+                <small>Recommended</small>
+                <strong>Dr. Rohan Mehta</strong>
+                <span>Internal Medicine</span>
+            </div>
+
+            <div class="doctor-rating">
+                ★ 4.9
+            </div>
+
+        </div>
+
+
+        <!-- FLOATING RECOVERY -->
+        <div class="floating-recovery">
+
+            <div class="recovery-check">
+                ✓
+            </div>
+
+            <div>
+                <small>RECOVERY PLAN</small>
+                <strong>Medicine reminder</strong>
+            </div>
+
+            <span>8:00 PM</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+
+    <div>
+        <span>✦</span>
+        AI-assisted care navigation
+    </div>
+
+    <div>
+        <span>✓</span>
+        Safety-first design
+    </div>
+
+    <div>
+        <span>★</span>
+        Patient-reviewed doctors
+    </div>
+
+    <div>
+        <span>🔒</span>
+        Privacy-focused architecture
+    </div>
+
+</section>
+
+
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="modern-section">
+
+    <div class="section-heading">
+
+        <div>
+            <small>HOW IT WORKS</small>
+
+            <h2>
+                From symptoms to
+                <span>better care.</span>
+            </h2>
+        </div>
+
+        <p>
+            MediCareAI connects the entire patient journey
+            instead of making you jump between different apps.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step-card">
+
+            <div class="step-number">
+                01
+            </div>
+
+            <div class="step-icon">
+                ✦
+            </div>
+
+            <h3>
+                Tell us how you feel
+            </h3>
+
+            <p>
+                Describe your symptoms using text or
+                voice and let our safety-focused system
+                analyze the situation.
+            </p>
+
+            <span class="step-arrow">→</span>
+
+        </div>
+
+
+        <div class="step-card featured-step">
+
+            <div class="step-number">
+                02
+            </div>
+
+            <div class="step-icon">
+                🩺
+            </div>
+
+            <h3>
+                Find the right doctor
+            </h3>
+
+            <p>
+                Discover doctors based on specialty,
+                ratings, reviews, experience and availability.
+            </p>
+
+            <span class="step-arrow">→</span>
+
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">
+                03
+            </div>
+
+            <div class="step-icon">
+                ❤️
+            </div>
+
+            <h3>
+                Recover with support
+            </h3>
+
+            <p>
+                Keep track of medicines, hydration,
+                exercise, sleep and follow-up care.
+            </p>
+
+            <span class="step-arrow">→</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- AI SECTION -->
+<section class="ai-showcase">
+
+    <div class="ai-showcase-content">
+
+        <small>INTELLIGENT CARE</small>
+
+        <h2>
+            Your health questions
+            <span>deserve clarity.</span>
+        </h2>
+
+        <p>
+            MediCareAI helps turn confusing symptoms into
+            understandable next steps while keeping emergency
+            safety at the center.
+        </p>
+
+
+        <div class="benefit-list">
+
+            <div>
+                <span>✓</span>
+                Emergency warning detection
+            </div>
+
+            <div>
+                <span>✓</span>
+                Specialty recommendation
+            </div>
+
+            <div>
+                <span>✓</span>
+                Doctor discovery
+            </div>
+
+            <div>
+                <span>✓</span>
+                Recovery guidance
+            </div>
+
+        </div>
+
+
+        <a href="{{ url_for('register') }}" class="dark-button">
+            Try AI Care Check →
+        </a>
+
+    </div>
+
+
+    <div class="ai-dashboard">
+
+        <div class="dashboard-top">
+
+            <div>
+                <small>AI CARE CHECK</small>
+                <h3>Health overview</h3>
+            </div>
+
+            <span class="live-badge">
+                ● LIVE
+            </span>
+
+        </div>
+
+
+        <div class="health-score">
+
+            <div class="score-circle">
+                <strong>82</strong>
+                <span>Care score</span>
+            </div>
+
+            <div>
+                <small>CURRENT STATUS</small>
+
+                <h3>
+                    Routine care
+                </h3>
+
+                <p>
+                    No emergency pattern detected
+                    by the initial screening.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="mini-health-grid">
+
+            <div>
+                <span>🩺</span>
+                <strong>Doctor</strong>
+                <small>Matched</small>
+            </div>
+
+            <div>
+                <span>💊</span>
+                <strong>Medicine</strong>
+                <small>2 reminders</small>
+            </div>
+
+            <div>
+                <span>💧</span>
+                <strong>Hydration</strong>
+                <small>6 glasses</small>
+            </div>
+
+            <div>
+                <span>🧘</span>
+                <strong>Recovery</strong>
+                <small>On track</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- DOCTOR SECTION -->
+<section class="modern-section">
+
+    <div class="section-heading">
+
+        <div>
+            <small>TRUSTED CARE NETWORK</small>
+
+            <h2>
+                Find a doctor
+                <span>you can trust.</span>
+            </h2>
+        </div>
+
+        <a href="{{ url_for('doctors') }}" class="view-all">
+            View doctors →
+        </a>
+
+    </div>
+
+
+    <div class="doctor-showcase">
+
+        <div class="doctor-preview">
+
+            <div class="big-doctor-avatar">
+                👩‍⚕️
+            </div>
+
+            <div class="doctor-info">
+
+                <div class="verified-badge">
+                    ✓ VERIFIED
+                </div>
+
+                <h3>
+                    Dr. Ananya Sharma
+                </h3>
+
+                <p>
+                    General Physician
+                </p>
+
+                <div class="doctor-meta">
+                    <span>★ 4.9</span>
+                    <span>324 reviews</span>
+                    <span>14 years</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="doctor-preview">
+
+            <div class="big-doctor-avatar purple">
+                👨‍⚕️
+            </div>
+
+            <div class="doctor-info">
+
+                <div class="verified-badge">
+                    ✓ VERIFIED
+                </div>
+
+                <h3>
+                    Dr. Rohan Mehta
+                </h3>
+
+                <p>
+                    Internal Medicine
+                </p>
+
+                <div class="doctor-meta">
+                    <span>★ 4.8</span>
+                    <span>412 reviews</span>
+                    <span>18 years</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="doctor-preview">
+
+            <div class="big-doctor-avatar green">
+                👩‍⚕️
+            </div>
+
+            <div class="doctor-info">
+
+                <div class="verified-badge">
+                    ✓ VERIFIED
+                </div>
+
+                <h3>
+                    Dr. Kavya Rao
+                </h3>
+
+                <p>
+                    Dermatologist
+                </p>
+
+                <div class="doctor-meta">
+                    <span>★ 4.9</span>
+                    <span>287 reviews</span>
+                    <span>11 years</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- RECOVERY -->
+<section class="recovery-section">
+
+    <div class="recovery-visual">
+
+        <div class="recovery-phone">
+
+            <div class="phone-top">
+                <span>9:41</span>
+                <span>● ● ●</span>
+            </div>
+
+            <div class="phone-title">
+                <small>GOOD MORNING</small>
+                <h3>Your recovery plan</h3>
+            </div>
+
+            <div class="progress-ring">
+                76%
+            </div>
+
+            <div class="recovery-item completed">
+                <span>✓</span>
+
+                <div>
+                    <strong>Take medicine</strong>
+                    <small>8:00 AM</small>
+                </div>
+            </div>
+
+            <div class="recovery-item">
+                <span>○</span>
+
+                <div>
+                    <strong>Drink water</strong>
+                    <small>10:00 AM</small>
+                </div>
+            </div>
+
+            <div class="recovery-item">
+                <span>○</span>
+
+                <div>
+                    <strong>Light yoga</strong>
+                    <small>6:00 PM</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="recovery-content">
+
+        <small>RECOVERY COMPANION</small>
+
+        <h2>
+            Getting better
+            shouldn't mean
+            <span>remembering everything.</span>
+        </h2>
+
+        <p>
+            Build a simple daily recovery routine with
+            reminders designed around your care plan.
+        </p>
+
+        <div class="recovery-features">
+
+            <div>
+                <b>💊</b>
+                <span>Medicine reminders</span>
+            </div>
+
+            <div>
+                <b>💧</b>
+                <span>Hydration tracking</span>
+            </div>
+
+            <div>
+                <b>🧘</b>
+                <span>Yoga & exercise</span>
+            </div>
+
+            <div>
+                <b>😴</b>
+                <span>Sleep routine</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- EMERGENCY -->
+<section class="emergency-banner">
+
+    <div class="emergency-icon">
+        +
+    </div>
+
+    <div>
+        <small>EMERGENCY SUPPORT</small>
+
+        <h2>
+            When every second matters.
+        </h2>
+
+        <p>
+            Quickly share your location and request
+            ambulance support through the configured
+            emergency provider.
+        </p>
+    </div>
+
+    <a href="{{ url_for('ambulance') }}" class="emergency-button">
+        Emergency Support →
+    </a>
+
+</section>
+
+
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+
+    <div class="cta-glow"></div>
+
+    <small>
+        YOUR HEALTH. YOUR JOURNEY.
+    </small>
+
+    <h2>
+        Take the next step
+        <span>toward better care.</span>
+    </h2>
+
+    <p>
+        Start your personalized healthcare journey
+        with MediCareAI.
+    </p>
+
+    <a href="{{ url_for('register') }}" class="hero-primary">
+        Create your free account →
+    </a>
+
+</section>
+
+{% endblock %}

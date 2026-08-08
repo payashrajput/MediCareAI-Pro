@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: medicareai
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --workers 2 --threads 4 --timeout 120 --bind 0.0.0.0:$PORT app:app
+    healthCheckPath: /healthz
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: DATABASE_PATH
+        value: /var/data/medicare.db
+      - key: UPLOAD_DIR
+        value: /var/data/uploads
+    disk:
+      name: medicare-data
+      mountPath: /var/data
+      sizeGB: 1
