@@ -1,1 +1,14 @@
-{%extends 'base.html'%}{%block title%}Health Profile{%endblock%}{%block content%}<section class="pagehead"><small class="eyebrow">HEALTH PROFILE</small><h1>Your essential <span>care context.</span></h1></section><form class="card profile" method="post"><div class="notice">Health data is sensitive. Production requires encryption, consent, access controls and audit logging.</div><div class="two"><label>Blood group<input name="blood" value="{{p.blood or ''}}"></label><label>Emergency contact<input name="emergency" value="{{p.emergency or ''}}"></label></div><label>Allergies<input name="allergies" value="{{p.allergies or ''}}"></label><label>Current medicines<textarea name="medicines">{{p.medicines or ''}}</textarea></label><label>Medical history<textarea name="history">{{p.history or ''}}</textarea></label><button class="btn primary">Save profile</button></form>{%endblock%}
+{%extends 'base.html'%}{%block title%}Health Profile{%endblock%}{%block content%}
+<section class="pagehead"><small class="eyebrow">HEALTH PROFILE</small><h1>Your essential <span>care context.</span></h1><p class="muted">Keep useful information ready for a clinician. This app does not interpret these values as a diagnosis.</p></section>
+<form class="card profile" method="post">
+<div class="notice">Health data is sensitive. Production requires encryption, consent, access controls, audit logging and appropriate healthcare/privacy compliance.</div>
+<div class="two"><label>Age<input name="age" type="number" min="0" max="120" value="{{p.age or ''}}"></label><label>Blood group<input name="blood" value="{{p.blood or ''}}" placeholder="e.g. O+"></label></div>
+<div class="two"><label>Height (cm)<input name="height_cm" type="number" step="0.1" min="30" max="250" value="{{p.height_cm or ''}}"></label><label>Weight (kg)<input name="weight_kg" type="number" step="0.1" min="1" max="500" value="{{p.weight_kg or ''}}"></label></div>
+{%if bmi%}<div class="notice"><b>Recorded BMI: {{bmi}}</b><span>For context only; BMI is not a diagnosis and can be misleading for some people.</span></div>{%endif%}
+<div class="two"><label>Blood pressure<input name="blood_pressure" value="{{p.blood_pressure or ''}}" placeholder="e.g. 120/80"></label><label>Glucose<input name="glucose" type="number" step="0.1" value="{{p.glucose or ''}}" placeholder="Optional"></label></div>
+<label>Emergency contact<input name="emergency" value="{{p.emergency or ''}}"></label>
+<label>Allergies<input name="allergies" value="{{p.allergies or ''}}"></label>
+<label>Current medicines<textarea name="medicines">{{p.medicines or ''}}</textarea></label>
+<label>Medical history<textarea name="history">{{p.history or ''}}</textarea></label>
+<button class="btn primary">Save profile</button>
+</form>{%endblock%}

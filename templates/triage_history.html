@@ -1,0 +1,3 @@
+{%extends 'base.html'%}{%block title%}Screening History{%endblock%}{%block content%}
+<section class="pagehead"><small class="eyebrow">CARE HISTORY</small><h1>Your screening <span>timeline.</span></h1><p class="muted">Past safety screens are stored for continuity. They are not diagnoses.</p></section>
+<div class="stack">{%for r in rows%}<article class="card"><div class="split"><div><b>{{r.level}}</b><span class="muted"> · {{r.specialty}} · {{r.score}}/100</span></div><small>{{r.created[:16]|replace('T',' ')}} UTC</small></div><p>{{r.symptoms}}</p>{%if r.flags and r.flags!='[]'%}<div class="notice dangerNotice">Safety flags: {{r.flags}}</div>{%endif%}</article>{%else%}<p class="muted">No screening history yet.</p>{%endfor%}</div>{%endblock%}

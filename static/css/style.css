@@ -1864,3 +1864,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .metrics { grid-template-columns: 1fr 1fr; }
   .emergency .card { padding: 20px; }
 }
+
+/* Appointment/admin controls */
+.appointmentCard{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-top:1px solid rgba(0,0,0,.08)}
+.appointmentMeta{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:.9rem;color:#5c6675}
+.appointmentActions,.adminActions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.cancelledBadge{opacity:.8}
+.dangerMini{border:0;cursor:pointer}
+.adminAppointment{align-items:center}
+@media(max-width:800px){.appointmentCard,.adminAppointment{flex-direction:column}.appointmentActions,.adminActions{justify-content:flex-start;width:100%}}
