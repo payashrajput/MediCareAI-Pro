@@ -656,8 +656,8 @@ def seed():
         c.commit()
     c.close()
     return "Demo admin created. Change the password and disable ENABLE_DEMO_ADMIN after testing."
-
+init()
 if __name__=="__main__":
-    init()
+
     app.run(host=os.getenv("HOST","127.0.0.1"),port=int(os.getenv("PORT","5000")),
             debug=os.getenv("FLASK_DEBUG","0")=="1")
